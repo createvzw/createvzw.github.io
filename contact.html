@@ -3,20 +3,21 @@
 <head>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Create VZW - Contact</title>
-    <meta name="description" content="Contacteer ons nu!"/>
+    <meta name="description" content="Contacteer ons nu!" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="styles/navbar.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header class="header" id="header">
+    <header class="header site-header" id="header">
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <div class="branding">
             <img class="logo" src="./images/logo.jpg" alt="Create vzw logo">
-            <div class="nav-item">
+            <label class="nav-item">
                 <a href="index.html">Create vzw</a>
-            </div>
+            </label>
         </div>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <ul class="menu">
@@ -34,7 +35,7 @@
                 <a href="aanbod.html">Aanbod</a>
             </li>
             <li class="nav-item">
-                <a href="prijslijst.html">Prijslijst</a>
+                <a href="prijslijst.html">Prijzen</a>
             </li>
             <li class="nav-item">
                 <a href="over.html">Over</a>
@@ -45,34 +46,39 @@
         </ul>
     </header>
 
-    <div class="content flex-center">
-        <div class="flex flex-container vertical flex-center">
-            <div class="flex-item center-text large-title">
-                <h1>Hoe kan je ons contacteren?</h1>
-            </div>
-            <div class="flex-container about">
-                <section class="child">
-                    <p>
-                        Heb je nog geen keuze gemaakt? Kom gerust even langs om eerst even een kijkje te nemen. U vindt ons in Godshuishammeke 27a, een zijstraat van de Sleepstraat. Tram 4, halte Gillis Coppinsstraat, is waar u afstapt. Bus 5 en 8 stoppen ook in de Sleepstraat.
-                    </p> 
-                    <p>
-                        <a class="button" href="mailto:createvzw@gmail.com;">Mail ons</a>
-                    </p>
-                </section>
-                <iframe class="child" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.5251797734254!2d3.7261443163724883!3d51.061854651001035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c37137587fdddb%3A0xb9ef213727840cf1!2sCreate+vzw!5e0!3m2!1sen!2sbe!4v1559755210455!5m2!1sen!2sbe" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
+    <div class="content contaier">
+        <div class="center-text large-title">
+            <h1>Hoe kan je ons contacteren?</h1>
+        </div>
+        <div>
+            <section class="col-md-3 col-md-offset-3">
+                <div class="col-md-12">
+                    <p> Heb je nog geen keuze gemaakt? Kom gerust even langs om eerst even een kijkje te nemen. U
+                        vindt
+                        ons in Godshuishammeke 27a, een zijstraat van de Sleepstraat. Tram 4, halte Gillis
+                        Coppinsstraat, is waar u afstapt. Bus 5 en 8 stoppen ook in de Sleepstraat.</p>
+
+                    <div class="col-md-12 p-3">
+                        <a class="btn button" href="mailto:createvzw@gmail.com;">Mail ons</a>
+                    </div>
+                </div>
+            </section>
+            <iframe class="col-md-3"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.5251797734254!2d3.7261443163724883!3d51.061854651001035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c37137587fdddb%3A0xb9ef213727840cf1!2sCreate+vzw!5e0!3m2!1sen!2sbe!4v1559755210455!5m2!1sen!2sbe"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
         </div>
     </div>
     <footer class="page-footer flex-container center">
-            <div class="flex-container">
-                <a class="child" href="https://doxtudio.be/" target="_blank" class="accent-link">Create VZW</a>
-                <a class="child" href="https://www.google.com/maps/place/Create+vzw/@51.0618513,3.728333,15z/data=!4m2!3m1!1s0x0:0xb9ef213727840cf1?ved=2ahUKEwjf29nm0_DgAhWCqaQKHUGmBoIQ_BIwCnoECAYQCA"
-                    target="_blank">Godshuishammeke 27a, 9000 Gent</a>
-                <a class="child" href="mailto:createvzw@gmail.com;">createvzw@gmail.com</a>
-                <a class="child" href="">0472 89 60 01</a>
-                <a class="child" href="https://www.facebook.com/createvzw/" target="_blank">facebook</a>
-            </div>
+        <div class="flex-container">
+            <a class="child" href="https://doxtudio.be/" target="_blank" class="accent-link">Create VZW</a>
+            <a class="child"
+                href="https://www.google.com/maps/place/Create+vzw/@51.0618513,3.728333,15z/data=!4m2!3m1!1s0x0:0xb9ef213727840cf1?ved=2ahUKEwjf29nm0_DgAhWCqaQKHUGmBoIQ_BIwCnoECAYQCA"
+                target="_blank">Godshuishammeke 27a, 9000 Gent</a>
+            <a class="child" href="mailto:createvzw@gmail.com;">createvzw@gmail.com</a>
+            <a class="child" href="">0472 89 60 01</a>
+            <a class="child" href="https://www.facebook.com/createvzw/" target="_blank">facebook</a>
+        </div>
     </footer>
 </body>
 

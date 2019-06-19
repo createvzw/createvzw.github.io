@@ -6,56 +6,95 @@
     <meta name="description" content="Bij Create VZW kunt u terecht om te dansen en knutselen zonder verplichtingen. 
             Iedereen is welkom tijdens onze dans, naai of workout sessies.
             Het Create team is steeds bereid om te helpen waar nodig.
-            In de zomer organizeren we ook vakantiekampen voor de kleinsten."/>
+            In de zomer organizeren we ook vakantiekampen voor de kleinsten." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="styles/navbar.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
-<body class="image-big">
-    <header class="header" id="header">
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <div class="branding">
-            <img class="logo" src="./images/logo.jpg" alt="Create vzw logo">
-            <div class="nav-item">
-                <a href="index.html">Create vzw</a>
-            </div>
-        </div>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <ul class="menu">
+<body>
+    <div id="myCarousel" class="carousel slide cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"
+        data-ride="carousel">
+        <header class="header" id="header">
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <div class="branding">
-                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                 <img class="logo" src="./images/logo.jpg" alt="Create vzw logo">
                 <label class="nav-item">
                     <a href="index.html">Create vzw</a>
                 </label>
             </div>
-            <li class="nav-item active-drawer">
-                <a href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="aanbod.html">Aanbod</a>
-            </li>
-            <li class="nav-item">
-                <a href="prijslijst.html">Prijslijst</a>
-            </li>
-            <li class="nav-item">
-                <a href="over.html">Over</a>
-            </li>
-            <li class="nav-item">
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </header>
-
-    <div class="content flex-center">
-        <div class="flex-container vertical center">
-            <div class="flex-item center-text large-title white">
-                <h1>Create VZW</h1>
-                <h2>V.Z.W. Create staat voor de creatieve ontwikkeling van lichaam en geest in een aangename ontspannen sfeer!</p>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <ul class="menu">
+                <div class="branding">
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <img class="logo" src="./images/logo.jpg" alt="Create vzw logo">
+                    <label class="nav-item">
+                        <a href="index.html">Create vzw</a>
+                    </label>
+                </div>
+                <li class="nav-item active-drawer">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="aanbod.html">Aanbod</a>
+                </li>
+                <li class="nav-item">
+                    <a href="prijslijst.html">Prijzen</a>
+                </li>
+                <li class="nav-item">
+                    <a href="over.html">Over</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </header>
+        <div class="carousel-inner">
+            <main class="content fixed">
+                <div class="col-md-6 col-md-offset-3 justify-content-center">
+                    <div class="text-center large-title white">
+                        <h1>Create VZW</h1>
+                        <h2>V.Z.W. Create staat voor de creatieve ontwikkeling van lichaam en geest in een aangename
+                            ontspannen
+                            sfeer!</p>
+                    </div>
+                    <div class="col-md-12 text-center p-3">
+                        <a class="btn button" href="aanbod.html">Ontdek ons aanbod</a>
+                    </div>
+                </div>
+            </main>
+            <div class="item active">
+                <img class="min-vh-100 full-image" src="./images/carousel/index_1.jpg" alt="Dansen kinderen">
             </div>
-            <a class="button" href="aanbod.html">Ontdek ons aanbod</a>
+            <div class="item">
+                <img class="min-vh-100 full-image" src="./images/carousel/index_2.jpg" alt="Dansen kinderen">
+            </div>
+            <div class="item">
+                <img class="min-vh-100 full-image" src="./images/carousel/index_3.jpg" alt="Dansen kinderen">
+            </div>
+            <div class="item">
+                <img class="min-vh-100 full-image" src="./images/carousel/index_4.jpg" alt="Dansen kinderen">
+            </div>
+            <div class="item">
+                <img class="min-vh-100 full-image" src="./images/carousel/index_5.jpg" alt="Dansen kinderen">
+            </div>
+            <div class="item">
+                <img class="min-vh-100 full-image" src="./images/carousel/index_6.jpg" alt="Dansen kinderen">
+            </div>
+
         </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 </body>
 

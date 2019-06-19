@@ -1,9 +1,8 @@
-<html>
-
 <head>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Create VZW - vakantiekampen, kinderopvang in Gent</title>
-    <meta name="description" content="Create organiseert vakantiekampen tijdens de zomer in Gent. Create voorziet opvang van 9:00 tot 17:00."/>
+    <meta name="description"
+        content="Create organiseert vakantiekampen tijdens de zomer in Gent. Create voorziet opvang van 9:00 tot 17:00." />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
@@ -11,148 +10,174 @@
 </head>
 
 <body>
-    <div class="content">
-        <header class="header" id="header">
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+    <header class="header" id="header">
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <div class="branding">
+            <img class="logo" src="./images/logo.jpg" alt="Create vzw logo">
+            <label class="nav-item">
+                <a href="index.html">Create vzw</a>
+            </label>
+        </div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <ul class="menu">
             <div class="branding">
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                 <img class="logo" src="./images/logo.jpg" alt="Create vzw logo">
-                <div class="nav-item">
+                <label class="nav-item">
                     <a href="index.html">Create vzw</a>
-                </div>
+                </label>
             </div>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <ul class="menu">
-                <div class="branding">
-                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-                    <img class="logo" src="./images/logo.jpg" alt="Create vzw logo">
-                    <label class="nav-item">
-                        <a href="index.html">Create vzw</a>
-                    </label>
-                </div>
-                <li class="nav-item">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="nav-item active-drawer">
-                    <a >Aanbod</a>
-                    <ul class="offering-menu">
-                        <li class="nav-item">
-                            <a href="aanbod.html">Overzicht</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="dansen.html">Dansen</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="workout.html">Workout</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="naaien.html">Naaien</a>
-                        </li>
-                        <li class="nav-item active-drawer">
-                            <a href="vakantiekampen.html">Vakantiekampen</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="tweedehandswinkeltje.html">Tweedehandswinkeltje</a>
-                        </li>
-                        <li class="nav-item">
-                                <a href="workshops.html">Workshops</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="prijslijst.html">Prijslijst</a>
-                </li>
-                <li class="nav-item">
-                    <a href="over.html">Over</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </header>
-    <div class="flex-container">
-        <ul class="offering-menu-large">
-                <li class="nav-item">
-                    <a href="aanbod.html" data-target="#myCarousel" data-slide-to="0">Overzicht</a>
-                </li>
-                <li class="nav-item">
-                    <a href="dansen.html">Dansen</a>
-                </li>
-                <li class="nav-item">
-                    <a href="workout.html">Workout</a>
-                </li>
-                <li class="nav-item">
-                    <a href="naaien.html">Naaien</a>
-                </li>
-                <li class="nav-item active-drawer">
-                    <a href="vakantiekampen.html">Vakantiekampen</a>
-                </li>
-                <li class="nav-item">
-                    <a href="tweedehandswinkeltje.html">Tweedehandswinkeltje</a>
-                </li>
-                <li class="nav-item">
-                    <a href="workshops.html">Workshops</a>
-                </li>
+            <li class="nav-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item active-drawer">
+                <a>Aanbod</a>
+                <ul class="offering-menu">
+                    <li class="nav-item">
+                        <a href="aanbod.html">Overzicht</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="dansen.html">Dansen</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="workout.html">Workout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="naaien.html">Naaien</a>
+                    </li>
+                    <li class="nav-item  active-drawer">
+                        <a href="vakantiekampen.html">Vakantiekampen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tweedehandswinkeltje.html">Tweedehandswinkeltje</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="workshops.html">Workshops</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="prijslijst.html">Prijzen</a>
+            </li>
+            <li class="nav-item">
+                <a href="over.html">Over</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html">Contact</a>
+            </li>
         </ul>
-        <div class="offering child">
-            <div class="container">
-                <div class="child">
-                    <div class="flex-item center-text large-title">
-                        <h1>Vakantiekampen</h1>
-                    </div>
-                    <div class="container">
-                        <section class="child">
-                                <p>Tijdens dit interactief vakantiekamp krijgen kinderen de kans hun eigen inbreng in de dans en het ontwerpen van de eigen kleding te brengen. We geven aandacht aan hun creativiteit en de zelfontplooiing tijdens dit leerrijke vakantiekamp.</p>
-                                <p>Dit unieke vakantiekamp gaat steeds door tijdens de 1ste week van juli en de laatste week van augustus.</p>
-                                <p>Dansen gaat door in de voormiddag en de naailessen in de namiddag. Deze kunnen ook apart gevolgd worden.</p>
-                                <p>‘sMiddags wordt er verse soep aangeboden. In de namiddag kunnen deelnemers genieten van een lekker vieruurtje.</p>
+    </header>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="col-md-2">
+                <ul class="offering-menu-large">
+                    <li class="nav-item ">
+                        <a href="aanbod.html" data-target="#myCarousel" data-slide-to="0">Overzicht</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="dansen.html">Dansen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="workout.html">Workout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="naaien.html">Naaien</a>
+                    </li>
+                    <li class="nav-item active-drawer">
+                        <a href="vakantiekampen.html">Vakantiekampen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tweedehandswinkeltje.html">Tweedehandswinkeltje</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="workshops.html">Workshops</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10 offering">
+                <div class="container">
+                    <div class="child">
+                        <div class="flex-item center-text large-title">
+                            <h1>Vakantiekampen</h1>
+                        </div>
+                        <div class="container">
+                            <section class="child">
+                                <p>Tijdens dit interactief vakantiekamp krijgen kinderen de kans hun eigen inbreng in de
+                                    dans en het ontwerpen van de eigen kleding te brengen. We geven aandacht aan hun
+                                    creativiteit en de zelfontplooiing tijdens dit leerrijke vakantiekamp.</p>
+                                <p>Dit unieke vakantiekamp gaat steeds door tijdens de 1ste week van juli en de laatste
+                                    week van augustus.</p>
+                                <p>Dansen gaat door in de voormiddag en de naailessen in de namiddag. Deze kunnen ook
+                                    apart gevolgd worden.</p>
+                                <p>‘sMiddags wordt er verse soep aangeboden. In de namiddag kunnen deelnemers genieten
+                                    van een lekker vieruurtje.</p>
                                 <p>Voor de dansles en na de naailes is er de mogelijkheid voor opvang.</p>
                                 <p>Je kind kan dus de hele dag komen van 9u – 17u.</p>
-                                <p>Het vakantiekamp wordt afgesloten met een mini-voorstelling voor de ouders en sympathisanten.</p>
+                                <p>Het vakantiekamp wordt afgesloten met een mini-voorstelling voor de ouders en
+                                    sympathisanten.</p>
 
-                        </section>
-                        <section class="child">
-                            <div class="scalable-image">
-                                <img src="images/vakantiekampen/vakantiekampen-1.jpg"/>
-                            </div>
-                        </section>
-                        
-                        <section class="child" style="display: none;">
-                            <h1>Prijslijst</h1>
-                            <table class="">
-                                    <tbody><tr>
-                                        <td class="">
-                                        10-beurtenkaart
-                                        </td>
-                                        <td class="">
-                                        € 65
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                        Koppeldansen
-                                        </td>
-                                        <td>
-                                        € 8,00
-                                        </td>
-                                    </tr>                              
-                                    </tbody></table>
-                        </section>
+                            </section>
+                            <section class="child">
+                                <div class="scalable-image">
+                                    <img src="images/vakantiekampen/vakantiekampen-1.jpg" />
+                                </div>
+                            </section>
+
+                            <section class="child" style="display: none;">
+                                <h1>Prijslijst</h1>
+                                <table class="">
+                                    <tbody>
+                                        <tr>
+                                            <td class="">
+                                                10-beurtenkaart
+                                            </td>
+                                            <td class="">
+                                                € 65
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Koppeldansen
+                                            </td>
+                                            <td>
+                                                € 8,00
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-</div>
-    <footer class="page-footer flex-container center">
-            <div class="flex-container">
-                <a class="child" href="index.html" target="_blank" class="accent-link">Create VZW</a>
-                <a class="child" href="https://www.google.com/maps/place/Create+vzw/@51.0618513,3.728333,15z/data=!4m2!3m1!1s0x0:0xb9ef213727840cf1?ved=2ahUKEwjf29nm0_DgAhWCqaQKHUGmBoIQ_BIwCnoECAYQCA"
-                    target="_blank">Godshuishammeke 27a, 9000 Gent</a>
-                <a class="child" href="mailto:createvzw@gmail.com;">createvzw@gmail.com</a>
-                <a class="child" href="">0472 89 60 01</a>
-                <a class="child" href="https://www.facebook.com/createvzw/" target="_blank">facebook</a>
+    <footer class="page-footer site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <a href="index.html" target="_blank">
+                        <div>Create VZW Godshuishammeke 27a, 9000 Gent</div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <a href="mailto:createvzw@gmail.com;">
+                        <div>createvzw@gmail.com</div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <a href="">
+                        <div>0472 89 60 01</div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <a href="https://www.facebook.com/createvzw/" target="_blank">
+                        <div>facebook</div>
+                    </a>
+                </div>
             </div>
+        </div>
     </footer>
 </body>
 

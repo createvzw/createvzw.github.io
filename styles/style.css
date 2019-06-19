@@ -1,7 +1,6 @@
-*{
+/* *{
     box-sizing: initial !important;
-}
-
+} */
 body{
     margin: 0;
     font-family: Roboto, Noto, sans-serif;
@@ -11,27 +10,10 @@ body{
     color: #212529;
     text-align: left;
     color: white;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-height: 100vh;
-    height: 100vh;
 }
 
-.site {
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* 1 */
-  }
-  .site-header,
-  .site-footer {
-    flex-shrink: 0; /* 2 */
-  }
-  .site-content {
-    flex: 1 0 auto; /* 2 */
+header + .content {
+    padding-top: 102px;
   }
 
 table{
@@ -44,6 +26,7 @@ tbody{
 
 .scalable-image{
     flex: 2 1 0px;
+    -js-flex: 2;
     min-width: 0;
 }
 
@@ -57,15 +40,16 @@ tbody{
     position: relative;
     background-position: center;
     background-size: cover;
-    display: -ms-flexbox;
+    -js-display: flex;
     display: flex;
     justify-content: center;
 }
 
 .flex-container{
-    display: -ms-flexbox;
+    -js-display: flex;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     z-index: 1;
     width: 100%;
 }
@@ -81,8 +65,8 @@ tbody{
   }
 
 .vertical{
+    -js-flex-direction: column;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -101,7 +85,7 @@ tbody{
     padding: 10px;
     float: left;
     margin-left: 50px;
-    display: -ms-flexbox;
+    -js-display: flex;
     display: flex;
 }
 
@@ -121,18 +105,6 @@ tbody{
     opacity: 1;
 }
 
-.active::before{
-    content: "";
-    height: 2px;
-    background-color: #149dcc;
-    width: 30px;
-    position: absolute;
-    display: block;
-    left: 50%;
-    bottom: 0;
-    margin-left: -15px;
-}
-
 .active-drawer{
     background-color: rgba(10,10,10,0.1);
 }
@@ -144,7 +116,6 @@ tbody{
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    width: 150px;
 }
 
 .button:hover{
@@ -158,32 +129,28 @@ tbody{
 }
 
 .content{
-    display: -ms-flexbox;
-    display: flex;
     color: #000;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin: 100 0;
     z-index: 0;
-    flex: 1;
-    -ms-flex: 1 1 auto;
+    min-height: 100%;
+}
+
+.ms-scroll{
+    -ms-overflow-y: auto;
+    -ms-overflow-style: none;
 }
 
 .flex{
     display: -ms-flexbox;
+    -js-display: flex;
     display: flex;
 }
 
 .flex-1{
     flex: 1;
-    -ms-flex: 1 1 0%;
 }
 
 .flex-2{
     flex: 2;
-    -ms-flex: 2 1 0%;
 }
 
 .page-intro{
@@ -225,6 +192,7 @@ tbody{
     right: 0;
     margin: 20;
     display: -ms-flexbox;
+    -js-display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -330,6 +298,29 @@ iframe{
     width: 60%;
 }
 
+footer{
+    -js-flex-shrink:0;
+    flex-shrink: 0;
+}
+
+.carousel .item .full-image {
+    height: 100%;
+    max-height: none;
+    min-width: auto;
+}
+
+.fixed{
+    position: fixed;
+    top: 100;
+    z-index: 500;
+    left: 0;
+    right: 0;
+}
+
+.carousel-control{
+    z-index: 501;
+}
+
 @media (min-width: 768px){
     .large-title h1 {
         font-size: 48px;
@@ -343,6 +334,7 @@ iframe{
         padding-top: 100%;
         position: relative;
         display: -ms-flexbox;
+        -js-display: flex;
         display: flex;
     }
 }
@@ -359,27 +351,28 @@ iframe{
         padding-top: 50%;
         position: relative;
         display: -ms-flexbox;
+        -js-display: flex;
         display: flex;
     }
     
     .child {
         flex: 1;
-        -ms-flex: 1 1 0%;
         margin: 20px;
     }
 
     .offering-menu-large{
         display: -ms-flexbox;
+        -js-display: flex;
         display: flex;
         margin-top: 20px;
         padding: 0;
+        -js-flex-direction: column;
         -webkit-flex-direction: column;
         flex-direction: column;
     }
 
     .flex-2{
         flex: 2;
-        -ms-flex: 2 1 0%;
     }
     
 }
@@ -395,6 +388,7 @@ iframe{
         padding-top: 33.33%;
         position: relative;
         display: -ms-flexbox;
+        -js-display: flex;
         display: flex;
     }
 
@@ -409,7 +403,7 @@ iframe{
     }
 
     .about{
-        width: 60%;
+        width: 80%;
     }
 
     .offering-menu-large{
@@ -418,7 +412,6 @@ iframe{
 
     .flex-2{
         flex: 2;
-        -ms-flex: 2 1 0%;
     }
     
 }
